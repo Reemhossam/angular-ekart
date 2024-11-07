@@ -4,3 +4,7 @@
 <p>Color: {{product.color}}</p>
 <p>Discount Price: {{'$'+getdiscountedprice()}}</p>
 <p>{{product.instock>0? ('only '+product.instock+' product in stock'):'no product in stock' }}</p>
+<button [disabled]="!(product.instock > 0)">buy now</button>
+<br><br>
+<input (input)="onNameChange($event)"/>
+<p>{{name}}</p>
