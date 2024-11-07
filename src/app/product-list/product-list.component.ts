@@ -12,7 +12,8 @@ name : "iphone 16",
 price  : 999,
 color : "black",
 discount : 10,
-instock:1
+instock:1,
+pImage:"../../assets/1727880149116.jpg"
 }
 getdiscountedprice(){
   return (this.product.price - (this.product.price * this.product.discount/100))
